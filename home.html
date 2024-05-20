@@ -18,29 +18,31 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-primary">
-            <div class="container-fluid">
-                <a class="navbar-brand me-5" href="index.html">TucuTurismo</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <div class="navbar-nav me-auto text-light">
-                        <a class="nav-link text-light" href="home.html">Home</a>
-                        <a class="nav-link text-light" href="gastronomia.html">Gastronomía</a>
-                        <a class="nav-link text-light" href="puntosint.html">Puntos de Interes</a>
-                        <a class="nav-link text-light" href="galeria.html">Galeria de Fotos</a>
-                        <a class="nav-link text-light" href="contacto.html">Contactos</a>
+    <header class="bg-primary">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-primary">
+                <div class="container-fluid">
+                    <a class="navbar-brand me-5" href="index.html">TucuTurismo</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="navbar-nav me-auto text-light">
+                            <a class="nav-link text-light" href="home.html">Home</a>
+                            <a class="nav-link text-light" href="gastronomia.html">Gastronomía</a>
+                            <a class="nav-link text-light" href="puntosint.html">Puntos de Interes</a>
+                            <a class="nav-link text-light" href="galeria.html">Galeria de Fotos</a>
+                            <a class="nav-link text-light" href="contacto.html">Contactos</a>
+                        </div>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-success " type="submit">Search</button>
+                        </form>
                     </div>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-success " type="submit">Search</button>
-                    </form>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
     <main>
         <div class="container my-2">
@@ -93,7 +95,7 @@
                 <div class="col-12 col-md-4">
                     <div class="card text-center bg-dark bg-gradient mb-2 mb-md-0 card-shadow ">
                         <div class="card-img-overlay p-0">
-                            <h4 class="bg-primary text-white py-2 bg-opacity-75">FOLKLORE</h4>
+                            <h4 class="rounded-top bg-primary text-white py-2 bg-opacity-75">FOLKLORE</h4>
                         </div>
                         <img src="./img/folklore tucuman.jpg" class="card-img" alt="...">
                         <div class="card-img-overlay d-flex flex-column justify-content-end p-3">
@@ -105,7 +107,7 @@
                 <div class="col-12 col-md-4">
                     <div class="card text-center bg-dark bg-gradient mb-2 mb-md-0 card-shadow ">
                         <div class="card-img-overlay p-0">
-                            <h4 class="bg-primary text-white py-2 bg-opacity-75">PARAPENTE</h4>
+                            <h4 class="rounded-top bg-primary text-white py-2 bg-opacity-75">PARAPENTE</h4>
                         </div>
                         <img src="./img/parapente.jpg" class="card-img" alt="...">
                         <div class="card-img-overlay d-flex flex-column justify-content-end p-3">
@@ -116,8 +118,8 @@
                 <!-- card 3 -->
                 <div class="col-12 col-md-4">
                     <div class="card text-center bg-dark bg-gradient mb-2 mb-md-0 card-shadow">
-                        <div class="card-img-overlay p-0">
-                            <h4 class="bg-primary text-white py-2 bg-opacity-75">EL CADILLAL</h4>
+                        <div class=" card-img-overlay p-0">
+                            <h4 class="rounded-top bg-primary text-white py-2 bg-opacity-75">EL CADILLAL</h4>
                         </div>
                         <img src="./img/aerosilla.jpg" class="card-img" alt="...">
                         <div class="card-img-overlay d-flex flex-column justify-content-end p-3">
@@ -157,7 +159,6 @@
                     </ul>
                 </div>
             </div>
-
         </section>
     </footer>
 
