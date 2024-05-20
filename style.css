@@ -1,3 +1,8 @@
+body {
+    background: #fff url(./img/istockphoto-1248543652-612x612.jpg) center center/cover no-repeat;
+    background-size: cover;
+}
+
 .footerPage {
     width: 100vw;
     height: 200px;
