@@ -28,12 +28,55 @@ li a {
     font-family: "Poetsen One", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
   
-.shadow {
-    background: #c9b7c7;
-    box-shadow: inset 0 2px 3px #4d3147
+/* Estilos generales para la tarjeta */
+.card-hover {
+    overflow: hidden;
+    position: relative;
 }
 
+/* Estilos para la imagen */
+.zoom-img {
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Asegura que la imagen cubra el área sin distorsión */
+}
+
+.card-hover:hover .zoom-img {
+    transform: scale(1.1);
+}
+
+/* Asegurarse que el h4 se mantenga arriba */
+.card-img-overlay h4 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+
+/* Estilos para el botón */
+.btn-apple-green {
+    background-color: #8DB600;  /* Color verde manzana */
+    border: none;
+}
+
+.btn-hover {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-hover:hover {
+    background-color: #7FA400;  /* Un tono más oscuro de verde manzana para el hover */
+    transform: scale(1.05);
+}
+
+.form-control, .form-check-input {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.custom-file-input {
+    width: 100%;
+}
 
   
