@@ -38,10 +38,13 @@ async function loadRestaurants() {
         restaurantsContainer.innerHTML = '';
         
         restaurants.forEach(restaurant => {
+            // Asegúrate de que hay al menos una imagen en el array
+            const imageUrl = restaurant.imagen.length > 0 ? restaurant.imagen[0].secure_url : 'path/to/default/image.jpg';
+            
             const cardHtml = `
                 <div class="col">
                     <div class="card">
-                        <img src="${restaurant.imagen}" class="card-img-top" alt="${restaurant.name}">
+                        <img src="${imageUrl}" class="card-img-top" alt="${restaurant.name}">
                         <div class="card-body">
                             <h5 class="card-title">${restaurant.name}</h5>
                             <p class="card-text">${restaurant.description}</p>
@@ -56,6 +59,7 @@ async function loadRestaurants() {
         console.error('Error:', error);
     }
 }
+
 
 // Función para cargar las categorías en el select
 async function loadCategories() {
