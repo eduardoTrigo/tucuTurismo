@@ -14,7 +14,7 @@ document.getElementById('restaurantForm').addEventListener('submit', async (even
     formData.append('image', document.getElementById('imagen').files[0]);
 
     try {
-        const response = await fetch('http://localhost:3000/restaurant', {
+        const response = await fetch('https://tucuturismo-backend.onrender.com/restaurant', {
             method: 'POST',
             body: formData
         });
@@ -30,7 +30,7 @@ document.getElementById('restaurantForm').addEventListener('submit', async (even
 
 async function loadRestaurants() {
     try {
-        const response = await fetch('http://localhost:3000/restaurant');
+        const response = await fetch('https://tucuturismo-backend.onrender.com/restaurant');
         const restaurants = await response.json();
         const restaurantsContainer = document.getElementById('restaurantsContainer');
         
@@ -60,7 +60,7 @@ async function loadRestaurants() {
 // Función para cargar las categorías en el select
 async function loadCategories() {
     try {
-        const response = await fetch('http://localhost:3000/category');
+        const response = await fetch('https://tucuturismo-backend.onrender.com/category');
         const categories = await response.json();
         const categorySelect = document.getElementById('categoryId');
         categorySelect.innerHTML = '<option value="" disabled selected>Seleccione una categoría</option>';
