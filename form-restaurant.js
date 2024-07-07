@@ -60,7 +60,7 @@ async function loadRestaurants() {
 // Función para cargar las categorías en el select
 async function loadCategories() {
     try {
-        const response = await fetch('https://api.render.com/deploy/srv-cq5g59dds78s73d1iq60?key=iwXp1tkp03k');
+        const response = await fetch('http://localhost:3000/category');
         const categories = await response.json();
         const categorySelect = document.getElementById('categoryId');
         categorySelect.innerHTML = '<option value="" disabled selected>Seleccione una categoría</option>';
