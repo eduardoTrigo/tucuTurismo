@@ -41,7 +41,7 @@ async function loadRestaurants() {
             const cardHtml = `
                 <div class="col">
                     <div class="card">
-                        <img src="${restaurant.image}" class="card-img-top" alt="${restaurant.name}">
+                        <img src="${restaurant.imagen}" class="card-img-top" alt="${restaurant.name}">
                         <div class="card-body">
                             <h5 class="card-title">${restaurant.name}</h5>
                             <p class="card-text">${restaurant.description}</p>
